@@ -18,23 +18,27 @@ export default function WhyTrust() {
         <div className="grid grid-cols-2 gap-6 max-w-md">
 
           <img
-            src="/images/1.jpg"
+            src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0"
             className="rounded-[24px] h-[210px] w-full object-cover"
+            alt="team meeting"
           />
 
           <img
-            src="/images/2.jpg"
+            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
             className="rounded-[24px] h-[210px] w-full object-cover mt-10"
+            alt="office discussion"
           />
 
           <img
-            src="/images/3.jpg"
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
             className="rounded-[24px] h-[210px] w-full object-cover"
+            alt="business teamwork"
           />
 
           <img
-            src="/images/4.jpg"
+            src="https://images.unsplash.com/photo-1552664730-d307ca884978"
             className="rounded-[24px] h-[210px] w-full object-cover mt-10"
+            alt="corporate meeting"
           />
 
         </div>
@@ -52,7 +56,7 @@ export default function WhyTrust() {
           <ul className="space-y-5">
 
             {points.map((point, index) => (
-              <li key={index} className="flex items-start gap-3 text-[18px] font-semibold ">
+              <li key={index} className="flex items-start gap-3 text-[18px] font-semibold">
 
                 <Check
                   className="text-purple-600 mt-[3px]"

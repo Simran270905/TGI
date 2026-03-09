@@ -1,5 +1,5 @@
 import React from "react";
-import image1 from "../../src/assets/images/image.png";
+
 export default function Home() {
   return (
     <section className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6 py-16">
@@ -49,8 +49,8 @@ export default function Home() {
       {/* Right Image */}
       <div className="flex justify-center">
         <img
-          src={image1}
-          alt="image"
+          src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0"
+          alt="Recruitment team"
           className="rounded-3xl shadow-lg w-full max-w-md object-cover"
         />
       </div>
