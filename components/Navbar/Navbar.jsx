@@ -20,8 +20,12 @@ export default function Navbar() {
           </li>
 
           <li className="hover:text-indigo-600 cursor-pointer">Services</li>
-          <li className="hover:text-indigo-600 cursor-pointer">Our Clients</li>
-          <li className="hover:text-indigo-600 cursor-pointer">Testimonials</li>
+          <li>
+            <Link to="/our-clients" className="hover:text-indigo-600 cursor-pointer">Our Clients</Link>
+          </li>
+          <li>
+            <Link to="/testimonials" className="hover:text-indigo-600 cursor-pointer">Testimonials</Link>
+          </li>
         </ul>
 
         {/* Button */}

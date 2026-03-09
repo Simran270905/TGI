@@ -6,6 +6,12 @@ import HomePage from "../pages/HomePage";
 import AboutPage from "../pages/AboutPage";
 import ITPage from "../pages/Services/ITPage";
 import BPOPage from "../pages/Services/BPOPage";
+import NonITPage from "../pages/Services/NonITPage";
+import AccountingPage from "../pages/Services/AccountingPage";
+import HealthcarePage from "../pages/Services/HealthcarePage";
+import OurClientPage from "../pages/OurClientPage";
+import TestimonialsPage from "../pages/TestimonialsPage";
+import ContactUsPage from "../pages/ContactUsPage"; 
 
 function App() {
   return (
@@ -22,6 +28,12 @@ function App() {
         {/* Services Routes */}
         <Route path="/services/it" element={<ITPage />} />
         <Route path="/services/bpo" element={<BPOPage />} />
+        <Route path="/services/non-it" element={<NonITPage />} />
+        <Route path="/services/accounting" element={<AccountingPage />} />
+        <Route path="/services/healthcare" element={<HealthcarePage />} />
+        <Route path="/our-clients" element={<OurClientPage   />} />
+        <Route path="/testimonials" element={<TestimonialsPage />} />
+        <Route path="/contact" element={<ContactUsPage />} />
       </Routes>
 
     </BrowserRouter>
