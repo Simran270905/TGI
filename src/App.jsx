@@ -1,17 +1,17 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Navbar from "../components/Navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 
-import HomePage from "../pages/HomePage";
-import AboutPage from "../pages/AboutPage";
-import ITPage from "../pages/Services/ITPage";
-import BPOPage from "../pages/Services/BPOPage";
-import NonITPage from "../pages/Services/NonITPage";
-import AccountingPage from "../pages/Services/AccountingPage";
-import HealthcarePage from "../pages/Services/HealthcarePage";
-import OurClientPage from "../pages/OurClientPage";
-import TestimonialsPage from "../pages/TestimonialsPage";
-import ContactUsPage from "../pages/ContactUsPage"; 
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import ITPage from "./pages/Services/ITPage";
+import BPOPage from "./pages/Services/BPOPage";
+import NonITPage from "./pages/Services/NonITPage";
+import AccountingPage from "./pages/Services/AccountingPage";
+import HealthcarePage from "./pages/Services/HealthcarePage";
+import OurClientPage from "./pages/OurClientPage";
+import TestimonialsPage from "./pages/TestimonialsPage";
+import ContactUsPage from "./pages/ContactUsPage"; 
 
 function App() {
   return (
