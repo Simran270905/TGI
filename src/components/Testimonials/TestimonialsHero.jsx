@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
@@ -35,12 +34,12 @@ export default function TestimonialsHero() {
   const t = testimonials[index];
 
   return (
-    <section className="bg-[#F4F4F6] py-24 px-6">
+    <section className="bg-[#EDEDF0] py-24 px-6">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
         {/* LEFT SIDE */}
         <div>
-          <span className="px-4 py-1 border border-purple-400 text-purple-600 rounded-full text-sm font-medium">
+          <span className="px-4 py-1 border border-purple-500 text-purple-600 rounded-full text-sm font-medium">
             Testimonials
           </span>
 
@@ -59,38 +58,46 @@ export default function TestimonialsHero() {
           </p>
         </div>
 
-        {/* RIGHT SIDE CARD */}
-        <div className="relative">
+        {/* RIGHT SIDE */}
+        <div className="flex flex-col items-center">
 
-          <div className="bg-gradient-to-b from-purple-800 to-purple-600 text-white p-10 rounded-3xl max-w-md ml-auto">
+          {/* CARD */}
+          <div className="bg-gradient-to-b from-purple-800 to-purple-600 text-white p-12 rounded-[32px] max-w-md w-full shadow-xl">
 
-            <div className="text-6xl font-serif mb-6 opacity-90">“</div>
+            {/* QUOTE */}
+            <div className="text-7xl font-bold opacity-90 mb-6">
+              ”
+            </div>
 
-            <p className="text-lg leading-relaxed mb-10">
+            {/* TEXT */}
+            <p className="text-lg leading-relaxed mb-12 opacity-95">
               {t.text}
             </p>
 
+            {/* USER */}
             <div className="flex items-center gap-4">
+
               <img
                 src={t.image}
                 alt={t.name}
-                className="w-12 h-12 rounded-full object-cover"
+                className="w-14 h-14 rounded-full object-cover border-2 border-white/30"
               />
 
               <div>
-                <p className="font-semibold text-lg">{t.name}</p>
+                <p className="font-semibold text-xl">{t.name}</p>
                 <p className="text-sm opacity-80">{t.role}</p>
               </div>
+
             </div>
 
           </div>
 
           {/* ARROWS */}
-          <div className="flex gap-4 mt-6 justify-end pr-2">
+          <div className="flex gap-6 mt-8">
 
             <button
               onClick={prev}
-              className="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-200 transition"
+              className="w-12 h-12 rounded-full border border-gray-400 flex items-center justify-center hover:bg-gray-200 transition"
             >
               <ChevronLeftIcon className="w-5" />
             </button>

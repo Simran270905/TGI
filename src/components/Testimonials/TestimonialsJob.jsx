@@ -1,4 +1,4 @@
-import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function TestimonialsJob() {
   return (
@@ -8,19 +8,16 @@ export default function TestimonialsJob() {
         {/* LEFT CONTENT */}
         <div>
 
-          {/* Badge */}
           <span className="inline-block bg-[#F3E8FF] text-[#7A1CC2] border border-[#CFA8FF] px-4 py-1 rounded-full text-sm mb-6">
             Testimonials
           </span>
 
-          {/* Heading */}
           <h2 className="text-[42px] font-bold leading-tight mb-6">
             <span className="text-[#7A1CC2]">What</span> our Job Seekers
             <br />
             are saying ?
           </h2>
 
-          {/* Description */}
           <p className="text-gray-700 text-[17px] max-w-[480px] leading-relaxed">
             We've helped 60,000+ professionals find roles that match their
             skills, aspirations, and career goals. Here's what they have to
@@ -29,23 +26,29 @@ export default function TestimonialsJob() {
 
         </div>
 
-        {/* TESTIMONIAL CARD */}
-        <div className="flex flex-col items-end">
+        {/* RIGHT SIDE */}
+        <div className="flex flex-col items-center">
 
-          <div className="bg-gradient-to-b from-[#7A1CC2] to-[#5B0FA3] text-white p-10 rounded-[26px] w-[420px]">
+          {/* CARD */}
+          <div className="bg-gradient-to-b from-[#7A1CC2] to-[#5B0FA3] text-white p-12 rounded-[30px] w-[420px] min-h-[420px] flex flex-col justify-between">
 
-            {/* Quote Icon */}
-            <Quote size={40} className="mb-6 opacity-80" />
+            {/* TOP */}
+            <div>
 
-            {/* Quote Text */}
-            <p className="text-[17px] leading-relaxed mb-8">
-              "TG INDIA placed me in my dream job within two weeks. Their
-              team was supportive, professional, and genuinely cared about
-              my career growth."
-            </p>
+              <div className="text-7xl leading-none mb-6 opacity-90">
+                ”
+              </div>
 
-            {/* Profile */}
-            <div className="flex items-center gap-4">
+              <p className="text-[17px] leading-relaxed">
+                "TG INDIA placed me in my dream job within two weeks. Their
+                team was supportive, professional, and genuinely cared about
+                my career growth."
+              </p>
+
+            </div>
+
+            {/* PROFILE */}
+            <div className="flex items-center gap-4 mt-10">
 
               <img
                 src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=300&auto=format&fit=crop"
@@ -54,7 +57,7 @@ export default function TestimonialsJob() {
               />
 
               <div>
-                <h4 className="font-semibold text-lg">
+                <h4 className="font-semibold text-xl">
                   Vikram Nair
                 </h4>
 
@@ -67,15 +70,15 @@ export default function TestimonialsJob() {
 
           </div>
 
-          {/* NAV BUTTONS */}
-          <div className="flex gap-4 mt-6">
+          {/* NAVIGATION */}
+          <div className="flex gap-6 mt-8">
 
-            <button className="w-10 h-10 rounded-full border border-gray-400 flex items-center justify-center text-gray-700 hover:bg-gray-200 transition">
-              <ChevronLeft size={18} />
+            <button className="w-12 h-12 rounded-full border border-gray-400 flex items-center justify-center text-gray-700 hover:bg-gray-200 transition">
+              <ChevronLeft size={20} />
             </button>
 
-            <button className="w-10 h-10 rounded-full bg-[#3C33D8] text-white flex items-center justify-center hover:opacity-90 transition">
-              <ChevronRight size={18} />
+            <button className="w-12 h-12 rounded-full bg-[#3C33D8] text-white flex items-center justify-center hover:opacity-90 transition">
+              <ChevronRight size={20} />
             </button>
 
           </div>

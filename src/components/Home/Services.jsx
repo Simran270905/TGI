@@ -47,7 +47,7 @@ export default function Services() {
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-80 object-cover group-hover:scale-105 transition duration-300"
+                  className="w-full h-100 object-cover group-hover:scale-105 transition duration-300"
                 />
               </div>
 

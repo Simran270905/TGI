@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <section className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6 py-16">
+    <section className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6 py-10">
 
       {/* Left Content */}
       <div>
